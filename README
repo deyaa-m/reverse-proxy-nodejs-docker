@@ -1,0 +1,10 @@
+to check that everything is working as it should : navigate to your browser 
+
+	- ip:8080 > will take you to nginx page
+	- ip:8081 > will take you to app1 page "directly"
+	- ip:8082 > will take you to app2 page "directly"
+	- ip:8080/app1 > will take you to app1 redirected by nginx
+	- ip:8080/app2 > will take you to app2 redirected by nginx 
+
+ ps :  ip : - if it is your local machine then, localhost:8080
+	    - if it is an aws or so then, machine-ip:8080

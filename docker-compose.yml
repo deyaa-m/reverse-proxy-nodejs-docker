@@ -1,0 +1,30 @@
+version : "3"
+services : 
+        reverse :
+                container_name : nginx
+                image : nginx
+                volumes : 
+                        - ./nginx:/etc/nginx/conf.d:ro
+                ports : 
+                        - "80:80"
+        app1 : 
+                container_name : app1
+                build : ./app1 
+               # volumes : 
+               #         - ./app1:/app:rw
+               # working_dir : /app
+               # command : ["npm", "install"] 
+               # entrypoint : ["npm", "start"]
+                ports : 
+                        - "8081:7777"
+
+        app2 : 
+                container_name : app2
+                build : ./app2
+                #volumes : 
+                #         - ./app2:/app
+                #working_dir : /app
+                #command : npm install
+                #entrypoint : ["npm", "start"]
+                ports : 
+                        - "8082:8888"

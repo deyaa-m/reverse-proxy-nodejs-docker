@@ -1,0 +1,6 @@
+
+	the default.conf does the following : redirect traffic from nginx to either app1 or app2 as shown : 
+				location /"any-thing"
+					proxy_pass http://container_name:port/;
+
+		   
