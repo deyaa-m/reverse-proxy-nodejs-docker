@@ -1,4 +1,6 @@
-to check that everything is working as it should : navigate to your browser 
+this is a docker-compose file that builds 2 nodejs apps served by nginx as a reverse-proxy
+
+## to check that everything is working as it should : navigate to your browser
 
 	- ip:8080 > will take you to nginx page
 	- ip:8081 > will take you to app1 page "directly"
