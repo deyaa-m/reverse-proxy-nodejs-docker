@@ -8,5 +8,9 @@ this is a docker-compose file that builds 2 nodejs apps served by nginx as a rev
 	- ip:8080/app1 > will take you to app1 redirected by nginx
 	- ip:8080/app2 > will take you to app2 redirected by nginx 
 
- ps :  ip : - if it is your local machine then, localhost:8080
+ ps : 1- ip : - if it is your local machine then, localhost:8080
 	    - if it is an aws or so then, machine-ip:8080
+
+      2- in app1 : the app was built and executed within the container itself
+	 in app2 : the app was build in a container, packaged and saved to a docker image then,
+			 was run by the docker-compose file in another container 
